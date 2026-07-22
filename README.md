@@ -2,10 +2,10 @@
 
 **Keep your notebook. Keep your pandas. Lose the wait.**
 
-This package demonstrates [KDB-X Python](https://code.kx.com/pykx/4.0/) (`pykx`) — the kdb vector engine embedded in your Python process — on the workloads quant pods run daily: asof joins, bucketed bars, rolling windows, at tick scale. One runnable notebook, three claims, each backed by code you can audit:
+This package demonstrates [KDB-X Python](https://code.kx.com/pykx/4.0/) (`pykx`) — the kdb vector engine embedded in your Python process — on common quant workloads: asof joins, bucketed bars, rolling windows, at tick scale. It covers three concepts:
 
 1. **Your workflow doesn't change** — same notebook, same Python, largely the same pandas API.
-2. **The core quant operations get much faster** — measured live in Section 5, not asserted.
+2. **The core quant operations get much faster** — measured live in Section 5.
 3. **q is optional** — the Python API covers the work; your AI assistant covers the rest.
 
 ## Measured (Google Colab, seeded data — rerun it yourself)
@@ -16,7 +16,6 @@ This package demonstrates [KDB-X Python](https://code.kx.com/pykx/4.0/) (`pykx`)
 | B: OHLC + VWAP bars, 15-min buckets | 4.01 s | 2.18 s | **1.8×** |
 | C: rolling MA(20) per symbol | 18.06 s | 3.61 s | **5×** |
 
-Both engines produce identical results (verified in-notebook before timing). Mean of 10 runs.
 
 ## Run it
 
@@ -31,13 +30,13 @@ Both engines produce identical results (verified in-notebook before timing). Mea
 | Section | What it shows |
 |---|---|
 | 1–2 | 40M rows generated in seconds; the pandas API you already know, on kdb memory |
-| 3 | VWAP buckets and the asof join — the time-series operations pandas fights |
-| 4 | 300M rows on disk, partitioned, same API |
-| 5 | The benchmark above, run live with sanity checks |
+| 3 | VWAP buckets and the asof join |
+| 4 | 300M rows on disk, partitioned |
+| 5 | The benchmark |
 | 6 | Plotting stays Python (plotnine); optional: 500K raw ticks rendered in-engine in <1s |
-| 7 | Parquet files queried in place — no import step |
-| 8 | Connecting to a production kdb server — same queries over IPC |
-| 9–10 | q with an AI assistant that knows it; getting started |
+| 7 | Parquet files queried in place, no import step |
+| 8 | Connecting to a production kdb server, same queries over IPC |
+| 9–10 | q with an AI assistant that knows it, more resources |
 
 ## Learn more
 

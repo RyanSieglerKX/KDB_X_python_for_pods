@@ -5,7 +5,7 @@
 This package demonstrates [KDB-X Python](https://code.kx.com/pykx/4.0/) (`pykx`) - the kdb vector engine embedded in your Python process - on common quant workloads: asof joins, bucketed bars, rolling windows, at tick scale. It covers three concepts:
 
 1. **Your workflow doesn't change:** same notebook, same Python, largely the same pandas API.
-2. **The core quant operations get much faster:** measured live in Section 5.
+2. **The core quant operations get much faster:** measured in Section 5.
 3. **q is optional:** the Python API covers the work; your AI assistant covers the rest.
 
 ## Measured performance

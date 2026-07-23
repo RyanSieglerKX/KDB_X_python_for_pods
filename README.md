@@ -17,7 +17,7 @@ Section 5 benchmarks three workloads (20M trades / 20M quotes), pandas versus KD
 - **OHLC + VWAP bars: ~2x faster**
 
 Absolute times vary by machine and pandas version, so the notebook measures them live on yours. The multipliers grow with data size (`n` is a parameter; rerun at your scale).
-
+> This is not an official KX benchmark
 
 ## Run it
 
